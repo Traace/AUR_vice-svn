@@ -22,7 +22,7 @@ pkgver() {
 build() {
 	cd "${pkgname}/vice"
 	./autogen.sh
-	./configure --prefix=/usr --without-oss --without-alsa --enable-native-gtk3ui
+	./configure --prefix=/usr --without-oss --without-alsa --enable-native-gtk3ui --enable-x64
 	make
 }
 
